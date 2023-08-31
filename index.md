@@ -9,9 +9,12 @@ I Did Stuff
 
 ## Interests
 Hockey
+
 Video Games
+
 Building Computers
+
 Working on Cars
 
 ## Pictures
-![My Computer](image.png "My Desktop")
+![My Computer](/home/Gavin/vscode/Student/images/MyComputer.png "My Desktop")
