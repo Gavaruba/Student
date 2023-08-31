@@ -17,4 +17,4 @@ Building Computers
 Working on Cars
 
 ## Pictures
-![My Computer](/home/Gavin/vscode/Student/images/MyComputer.png "My Desktop")
+![My Computer](/home/Gavin/vscode/Student/images/MyComputer.jpg "My Desktop")
