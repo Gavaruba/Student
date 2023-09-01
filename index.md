@@ -5,16 +5,16 @@ title: Student Blog
 
 
 ## Home Page
-I Did Stuff
+ About Me
 
 ## Interests
-Hockey
+ Hockey
 
-Video Games
+ Video Games
 
-Building Computers
+ Building Computers
 
-Working on Cars
+ Working on Cars
 
 ## Pictures
-![My Computer](/images/MyComputer.png "My Desktop")
+None yet
