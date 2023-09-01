@@ -8,13 +8,13 @@ title: Student Blog
  About Me
 
 ## Interests
- Hockey
+   Hockey
 
- Video Games
+    Video Games
 
- Building Computers
+    Building Computers
 
- Working on Cars
+    Working on Cars
 
 ## Pictures
 None yet
