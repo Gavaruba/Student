@@ -5,10 +5,9 @@ title: Student Blog
 
 
 ## Home Page
- About Me
 
 ## Interests
-   Hockey
+    Hockey
 
     Video Games
 
