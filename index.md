@@ -16,4 +16,4 @@ title: Student Blog
     Working on Cars
 
 ## Pictures
-None yet
+![Picture](MyComputer.png "Picture")
