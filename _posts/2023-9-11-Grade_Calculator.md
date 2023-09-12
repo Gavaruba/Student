@@ -78,7 +78,7 @@ function newInputLine(index) {
     // Add a label for each score element
     var title = document.createElement('label');
     title.htmlFor = index;
-    title.innerHTML = "# " + index + " ";    
+    title.innerHTML = "Score #" + index + " ";    
     document.getElementById("scores").appendChild(title); // add to HTML
 
     // Setup score element and attributes
