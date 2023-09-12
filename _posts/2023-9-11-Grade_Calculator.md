@@ -9,7 +9,7 @@ type: Hacks
 %%html
 
 <!-- Help Message -->
-<h3>Input scores, press tab to add each new number.</h3>
+<h3>Input scores, press Enter to add each new number.</h3>
 <!-- Totals -->
 <ul>
 <li>
@@ -18,6 +18,14 @@ type: Hacks
     Average : <span id="average">0.0</span>
 </li>
 </ul>
+<button onclick="reload()">Clear</button>
+<p id="demo"></p>
+<script>
+    function reload() {
+        location.reload();
+        return false;
+    }
+</script>
 <!-- Rows added using scores ID -->
 <div id="scores">
     <!-- javascript generated inputs -->
@@ -43,7 +51,7 @@ function calculator(event) {
                 count++;
             }
         }
-
+    
         // update totals
         document.getElementById('total').innerHTML = total.toFixed(2); // show two decimals
         document.getElementById('count').innerHTML = count;
@@ -59,7 +67,10 @@ function calculator(event) {
             newInputLine(count); // make a new input line
         }
     }
+    // Clear button listener
 }
+
+
 
 // Creates a new input box
 function newInputLine(index) {
@@ -67,7 +78,7 @@ function newInputLine(index) {
     // Add a label for each score element
     var title = document.createElement('label');
     title.htmlFor = index;
-    title.innerHTML = index + ". ";    
+    title.innerHTML = "# " + index + " ";    
     document.getElementById("scores").appendChild(title); // add to HTML
 
     // Setup score element and attributes
