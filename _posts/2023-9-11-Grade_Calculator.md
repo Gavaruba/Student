@@ -1,10 +1,10 @@
 ---
 toc: false
-comments: true
+comments: false
 layout: post
-title: Grade Calculator
+title: Score Calculator
 description:
-type: Hacks
+type: Project
 ---
 %%html
 
