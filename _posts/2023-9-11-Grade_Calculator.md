@@ -6,24 +6,38 @@ title: Score Calculator
 description:
 type: Project
 ---
+
 %%html
 
 <!-- Help Message -->
 <h3>Input scores, press Enter to add each new number.</h3>
 <!-- Totals -->
-<ul>
-<li>
-    Total : <span id="total">0.0</span>
-    Count : <span id="count">0.0</span>
-    Average : <span id="average">0.0</span>
-</li>
-</ul>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+               <td>Total</td>
+               <td>Count</td>
+               <td>Average</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span id="total">0.0</span></td>
+                <td><span id="count">0.0</span></td>
+                <td><span id="average">0.0</span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
 <button onclick="reload()">Clear</button>
 <p id="demo"></p>
 <script>
     function reload() {
         location.reload();
-        return false;
     }
 </script>
 <!-- Rows added using scores ID -->
@@ -67,7 +81,6 @@ function calculator(event) {
             newInputLine(count); // make a new input line
         }
     }
-    // Clear button listener
 }
 
 
@@ -75,7 +88,7 @@ function calculator(event) {
 // Creates a new input box
 function newInputLine(index) {
 
-    // Add a label for each score element
+     Add a label for each score element
     var title = document.createElement('label');
     title.htmlFor = index;
     title.innerHTML = "Score #" + index + " ";    
@@ -95,7 +108,7 @@ function newInputLine(index) {
     var br = document.createElement("br");  // line break element
     document.getElementById("scores").appendChild(br); // add to HTML
 
-    // Set focus on the new input line
+     Set focus on the new input line
     document.getElementById(index).focus();
 }
 
