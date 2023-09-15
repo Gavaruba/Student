@@ -10,36 +10,15 @@ type: Project
 %%html
 
 <!-- Help Message -->
-<h3>Input scores, press Enter to add each new number.</h3>
+<h3>Input scores, press tab to add each new number.</h3>
 <!-- Totals -->
-<body>
-    <table class="table">
-        <thead>
-            <tr>
-               <td>Total</td>
-               <td>Count</td>
-               <td>Average</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><span id="total">0.0</span></td>
-                <td><span id="count">0.0</span></td>
-                <td><span id="average">0.0</span></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-<button onclick="reload()">Clear</button>
-<p id="demo"></p>
-<script>
-    function reload() {
-        location.reload();
-    }
-</script>
+<ul>
+<li>
+    Total : <span id="total">0.0</span>
+    Count : <span id="count">0.0</span>
+    Average : <span id="average">0.0</span>
+</li>
+</ul>
 <!-- Rows added using scores ID -->
 <div id="scores">
     <!-- javascript generated inputs -->
@@ -65,13 +44,13 @@ function calculator(event) {
                 count++;
             }
         }
-    
+
         // update totals
-        document.getElementById('total').innerHTML = total.toFixed(2); // show two decimals
+        document.getElementById('total').innerHTML = total.toFixed(3); // show two decimals
         document.getElementById('count').innerHTML = count;
 
         if (count > 0) {
-            document.getElementById('average').innerHTML = (total / count).toFixed(2);
+            document.getElementById('average').innerHTML = (total / count).toFixed(3);
         } else {
             document.getElementById('average').innerHTML = "0.0";
         }
@@ -83,15 +62,13 @@ function calculator(event) {
     }
 }
 
-
-
 // Creates a new input box
 function newInputLine(index) {
 
-     Add a label for each score element
+    // Add a label for each score element
     var title = document.createElement('label');
     title.htmlFor = index;
-    title.innerHTML = "Score #" + index + " ";    
+    title.innerHTML = index + ". ";    
     document.getElementById("scores").appendChild(title); // add to HTML
 
     // Setup score element and attributes
@@ -108,7 +85,7 @@ function newInputLine(index) {
     var br = document.createElement("br");  // line break element
     document.getElementById("scores").appendChild(br); // add to HTML
 
-     Set focus on the new input line
+    // Set focus on the new input line
     document.getElementById(index).focus();
 }
 
