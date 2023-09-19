@@ -16,7 +16,7 @@ type: Project
 </head>
 <body>
     <!-- Help Message -->
-    <h3>Input scores, press tab to add each new number.</h3>
+    <h3>Input scores, press Tab or Enter to add each new number.</h3>
     <!-- Table for Scores -->
     <table border="2">
         <thead>
