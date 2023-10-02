@@ -1,6 +1,6 @@
 ---
 toc: false
-comments: false
+comments: true
 layout: post
 title: Score Calculator
 description:
